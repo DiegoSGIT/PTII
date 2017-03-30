@@ -1,0 +1,42 @@
+body {
+    background: #1a1919;
+    align-content: center;
+    color: #d3d3d3;
+}
+
+.navbar {
+    color: 
+}
+.img-logo-cont {
+    width: 8%;
+}
+
+.nav-text {
+    color: #d2322d;
+    margin-left: 10%;
+}
+#img-logo {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+.header-navbar {
+    display: initial;*/
+    margin-bottom: 3em;
+}
+
+.footer{
+    height: 3.5em;
+    position: relative;
+    margin-top: 5em;
+    margin-bottom: : 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #d3d3d3;
+    font: caption;
+    font-size: small;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>AxTP</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="css/main.css">
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <!--script src="js/custom-css.js"></script-->   
+            <script src="js/main.js"></script>  
+        </head>
+    <body>
+<!-- ********************************************* Header navbar ********************************************* --><nav class="navbar navbar-inverse">
+    <div class="container-fluid row">
+        <div class="navbar-header col-md-5">
+<!--URL: http://10.106.195.106:8080-->
+            <a class="navbar-brand" href="#"><img alt="logo" src="img/logo.png" id="img-logo"/>
+        </div>
+        <div class="col-md-5">
+            <ul class="nav navbar-nav" style="display: none;">
+                <li style="display: none;"><a href="#">Home</a></li>
+                <li style="display: none;"><a href="#">Page 1</a></li>
+                <li style="display: none;"><a href="#">Page 2</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group input-group COLOR SUPER" style="display: none;">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                </span>
+                <input class="form-control" type="text" id="search" placeholder="Search"/>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- ********************************************* Login Form ********************************************* -->
+        <div class="container login-form">
+            <div class="row">
+                <div class="Absolute-Center is-Responsive">
+                    <div id="logo-container"></div>
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <form action="register.html" id="login-form">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </span>
+                                <input autofocus required="required" class="form-control" type="text" id="user" placeholder="Usuario"/>
+                            </div>
+                            <div class="form-group input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </span>
+                                <input required="required" class="form-control" type="password" id="pass" placeholder="Contraseña"/>     
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-def btn-block" style="color: black" id="login">Login</button>
+                            </div>
+                        </form>
+                        <div class="alert alert-danger" id="alert-login" style="display: none;">
+                            <strong>Error! </strong>Incorrect username or password
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        <!-- ********************************************* Inicio Empleado ********************************************* -->
+        <div class="container operator-welcome" style="display: none;">
+            <div class="row">
+                <div class="Absolute-Center is-Responsive">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <h3 id="name-welcome">sssss</h3>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        <!-- ********************************************* Footer ********************************************* -->
+        <footer class="footer container-fluid">
+            <div class="navbar">
+                <p class="text-center">Marcos Estrada & Diego Sanchez<br>Proyecto Terminal II<br>
+        Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas</p>
+            </div>
+        </footer>
+    </body>
+</html>
