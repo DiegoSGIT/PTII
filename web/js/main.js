@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var globalUrl = "http://localhost:8080/AxTPWS-1/rest/";
 	var userText = "";
 	var passText = "";
+	var data;
 	//var logger = $.Logger();
 	/*
 	window.location.hash="no-back-button";
@@ -55,21 +56,29 @@ $(document).ready(function(){
     e.preventDefault();
 	userText = $('#user').val();
 	passText = $('#pass').val();
+	data = JSON.stringify(eval({
+			"user": userText,
+			"password": passText
+		}));
 	$.ajax({
+
+      	contentType: "application/json",
+      	dataType: "json",
 		type: "POST",
-		data: {
-			user: userText,
-			pass: passText
-		},
+		data: data,
 		url: "http://localhost:8080/RFIDSystem/rest/Login/Empleado",
 		success: function(response) {
 			//var resp = jQuery.parseJSON(response);
-			if (response.id == 1) {
+			if (response.id > 0) {
+
 				$("#alert-login").hide();
 				$("#login-form").hide();
 				$("." + response.id).show();
 				$(".operator-welcome").show();
-				$("#name-welcome").text("Bienvenido " + response.id);
+				if(response.gerente)
+					$("#name-welcome").text("Bienvenido " + response.name + " gerente");
+				else
+					$("#name-welcome").text("Bienvenido " + response.name);
 			}
 			else {
 				$("#alert-login").show();
