@@ -3,10 +3,6 @@ body {
     align-content: center;
     color: #d3d3d3;
 }
-
-.navbar {
-    color: 
-}
 .img-logo-cont {
     width: 8%;
 }
@@ -22,7 +18,7 @@ body {
 
 .header-navbar {
     display: initial;*/
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .footer{
@@ -42,4 +38,8 @@ body {
 }
 .form-control {
   width: 10%;
+}
+
+.long-padding{
+    margin-bottom: 5em;
 }
