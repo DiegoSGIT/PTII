@@ -106,11 +106,10 @@ select DESCRIPCION, count(*) as CANTIDAD FROM (ARTICULOS AS A JOIN COMPRA_ARTICU
 -- http://localhost:8080/RFIDSystem/rest/Visitantes/update
 -- {
 --  "visitantes": {
---    "tag": 1,
--- "nombre": "Danahe",
---    "apellido": "Percastegui",
---    "correo": "dana@mail.com",
---    "saldo": 1000,
+--    "tag": 44,
+--    "nombre": "Franco",
+--    "correo": "franco@mail.com",
+--   "saldo": 1000,
 --    "nip": "1234",
 --    "idArea": 1,
 --    "idGrupo": 1,

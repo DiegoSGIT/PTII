@@ -22,6 +22,46 @@ $(document).ready(function(){
 		}
 	})
 
+	$('#new-group-form').on('submit', function (e) {
+		e.preventDefault();
+	var group = $('#new-group-name').val();
+	data = JSON.stringify(eval({
+			"group" : group
+		}));
+	/*$.ajax({
+
+      	contentType: "application/json",
+      	dataType: "json",
+		type: "POST",
+		data: data,
+		url: globalUrl + "Login/Empleado",
+		success: function(response) {
+			//var resp = jQuery.parseJSON(response);
+			if (response.id > 0) {
+
+				//$("#alert-login").hide();
+				//$("#login-form").hide();
+				//$("." + response.id).show();
+				//$(".operator-welcome").show();
+				if(response.gerente)
+    				window.location.href = 'registerEmployee.html';
+				else
+    				window.location.href = 'registerVisitor.html';
+			}
+			else {
+				$("#alert-login").show();
+				$("#user").text("");
+				$("#pass").text("");
+			}
+		},
+		error: function (argument) {
+			$("#name-welcome").text("Error");
+		}
+		//dataType: "text"
+	});*/
+	alert(group);
+
+	});
 
 
 	$('#login-form').on('submit',function(e){

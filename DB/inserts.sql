@@ -16,15 +16,15 @@ insert into GRUPOS (NOMBRE)
 			values ('Familia Huerta'),
 				   ('Los amigos'),
                    ('Brothers');
-insert into VISITANTES (TAG_VISITANTE,NOMBRE,APELLIDO,CORREO,SALDO,NIP,GRUPO_IDGRUPO,AREA_IDAREA,EMPLEADO_IDEMPLEADO)
-				values (1,'Diego','Sanchez','diego@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,4,1),
-					   (3454,'Marcos','Estrada','mEstrada@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,4,1),
-					   (678,'Miriam','Lopez','miriam@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),3,1,1),
-                       (2,'Gabriel','Gimenez','Ggimenez@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),2,3,2),
-                       (96,'Susana','Perez','susanaP@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),2,1,3),
-                       (237,'Oscar','Ortega','ortegaO@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,3,3),
-                       (58,'Fabian','Almanza','aFabian@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),3,5,2),
-                       (93,'Edgar','Solis','SEdgar@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,3,1);
+insert into VISITANTES (TAG_VISITANTE,NOMBRE,CORREO,SALDO,NIP,GRUPO_IDGRUPO,AREA_IDAREA,EMPLEADO_IDEMPLEADO)
+				values (1,'Diego','diego@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,4,1),
+					   (3454,'Marcos','mEstrada@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,4,1),
+					   (678,'Miriam','miriam@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),3,1,1),
+                       (2,'Gabriel','Ggimenez@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),2,3,2),
+                       (96,'Susana','susanaP@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),2,1,3),
+                       (237,'Oscar','ortegaO@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,3,3),
+                       (58,'Fabian','aFabian@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),3,5,2),
+                       (93,'Edgar','SEdgar@mail.com',500.0,AES_ENCRYPT('1234', 'UPIITA'),1,3,1);
                        
 insert into ESTABLECIMIENTOS (NOMBRE) values ('Fuente de sodas'),('Souvenirs'),('Cafeteria'),('Pizzeria'),('Tacos');
 
